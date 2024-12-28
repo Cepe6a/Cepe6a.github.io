@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cepe6a Main</title>
+ 
+
+ 
+ 
+    <style>
+
+@import url('https://fonts.cdnfonts.com/css/didot-2');
+
+
+
+.full{
+position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index:99;
+  background-color:black;
+    transition: 1s;
+}
+
+
+body{
+    
+    padding:20% 0;
+    background-color:black;
+    font-family: 'Didot', sans-serif;
+}
+
+.head{
+    color:white;
+}
+
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
+    zoom:60%;
+opacity:50%;    
+}
+
+.opi{
+    font-size:15px;
+}
+
+
+.post{
+    color: white;
+    border:2px solid white;
+    width:200px;
+}
+
+
+ a{
+  text-decoration: none; 
+  }
+
+    </style>
+
+
+
+
+
+
+</head>
+<body>
+    
+    
+    
+    <div class="head">
+     
+         <center>
+     
+      <img src="MainLogo.png" alt="Лого" height="130px">  
+   
+   <p><h1 style="font-size:40px;">Сергей</h1></p>
+    
+    <h3><font class="opi">Гений</font> | <font class="opi">Миллиардер</font> | <font class="opi">Плейбой</font> | <font class="opi">Филантроп</font></h3>
+    
+    </div>
+ 
+    <div style="padding:30px;"></div>
+    
+   <center>
+    <a href="https://github.com/goofy12-bit"><div class="post">GitHub</div></a>
+    <p></p>
+   <a href="https://t.me/Didwell"><div style="color:black;border:2px solid white;width:200px; background-color:white;">Телеграм</div></a>
+    <p></p>
+    <a href="https://www.pochta.ru/RU/post-index/443000"><div class="post">Почта России</div></a>
+    
+    </center>
+    
+    
+    <video id="background-video" autoplay muted loop >
+  <source src="backi.mp4" type="video/mp4">
+  Ваш браузер не поддерживает HTML5 видео. Ини на
+</video>
+    
+    
+    <div class="full" id="full">
+        
+        
+        
+    </div>
+    
+    
+    
+    
+    
+</body>
+</html>
+
+
+<script>
+    
+  setTimeout(hide, 2000)  
+    
+    
+ function hide()   {
+     document.getElementById("full").style.opacity = 0;
+    setTimeout(del, 1000)  
+ }
+    
+    
+    function del(){
+        document.getElementById("full").style.display = 'none';
+    }
+    
+</script>
